@@ -7,17 +7,25 @@ public class Fibonacci {
         Scanner in = new Scanner(System.in);
 
         int n = in.nextInt();
-        int a = 0;
-        int b = 1;
-        int count = 2;
+        //int a = 0;
+        //int b = 1;
+        //int count = 2;
 
-        while (count <= n){
+//        while (count <= n){
+//            int temp = b;
+//            b = b + a;
+//            a = temp;
+//            count++;
+//        }
+        // for loop
+        int a = 0;
+        int b =1;
+        for(int i = 2; i <= n ;i++){
             int temp = b;
             b = b + a;
             a = temp;
-            count++;
         }
 
-        System.out.println("nth fibanocii no is :" + b);
+        System.out.println( n + " th fibanocii no is :" + b);
     }
 }
